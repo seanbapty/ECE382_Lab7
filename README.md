@@ -25,3 +25,5 @@ However, prior to wiring up these pins it was necessary to check their functiona
 Finally, a rough outline of how the required functionality software should operate was developed.
 
 ![alt tag](https://raw.githubusercontent.com/seanbapty/ECE382_Lab7/master/Pseudo%20code--required.jpg)
+
+If there is a lot of quick varyation in the IR signal it may be useful to use the moving average function built in a homework assignment to control the interrupts rather than the instantaneous signal. 
