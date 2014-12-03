@@ -13,7 +13,8 @@ Create a standalone library for your ATD code and release it on Github. This sho
 
 Since each robot's sensors are a little bit different, you need to fully characterize the sensor for your robot. Create a table and graphical plot that shows the ATD values for a variety of distances from a maze wall. This table/graph must be generated for each IR sensor. Use these values to determine how the IR sensors work so you can properly use them to solve the maze.
 
-#Prelab
+#Preliminary Design/Prelab
+##Hardware Schematic
 Prior to thinking about how to implement LED software, it was necessary to think about how to hook up the hardware. From the class notes, any pin containing an A in the pin discription could be used as an input pin for IR signals. Because code was provided for A4 (P1.4) that pin was chosen. Additionally, pins A2 and A3 were selected to control the right and left sensors respectively because no other robot function currently uses these pins. Below is a schematic of the pin connections on the MSP430 to the robot IR ports. 
 
 ![alt tag](https://raw.githubusercontent.com/seanbapty/ECE382_Lab7/master/hardware%20schematic%20for%20IR%20sensors.jpg)
@@ -22,6 +23,7 @@ However, prior to wiring up these pins it was necessary to check their functiona
 
 ![alt tag](https://raw.githubusercontent.com/seanbapty/ECE382_Lab7/master/IR%20distance%20scale.jpg)
 
+##Software Design
 Finally, a rough outline of how the required functionality software should operate was developed.
 
 ![alt tag](https://raw.githubusercontent.com/seanbapty/ECE382_Lab7/master/Pseudo%20code--required.jpg)
