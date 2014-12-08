@@ -4,12 +4,6 @@
  * contains functions to set ADC memory based on IR input
  * works for each IR sensor
  */
-//-----------------------------------------------------------------
-// Name:	Coulston
-// File:	lab7.c
-// Date:	Fall 2014
-// Purp:	Collect analog samples from P1.3 and P1.4
-//-----------------------------------------------------------------
 #include "lab7.h"
 
 unsigned int centerIR(){
