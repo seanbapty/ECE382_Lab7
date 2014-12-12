@@ -174,5 +174,11 @@ The most powerful tool in debugging the IR sensors in a multimeter. In order to 
 The other hardware issue came from false readings of the IR sensor. This means that even when the IR shouldn't pick up a value above the threshold of 0x200 it did and the light wend on. This normally was not an issue as the sampling rate was fast enough that the light flash was not noticeable. This was mitigated by getting adequate blinders for the IR. The problem was not bad enough, but using a moving average function could help smooth out the signal. Furthermore, this could be mitigated by sampling at a slower rate thus decreasing the number of samples and the number of chances of getting a false reading.
 
 #Testing methodology / results
+
+It was not necessary to look at variables or registers when testing this code as its functionality was clearly apparent with the toggling of the light. To test the IR, a piece of paper was slowly moved toward the robor IR sensor directly in front of it, and then slowly moved away directly in front of it. See the Prelab for the scale of distances of when certain sensors where triggered. The result was a light on when a wall was close, and the light went off as the wall moved further away from the wall. This process was repeated for all 3 IR sensors.
 #Observations and Conclusions
+
+Although they are drastically different in voltage readings, all 3 IR sensors work. Going forward, it is important to scale the IR values to accomplish the task with the given IR sensor because of these differences. Other than that, there should be no problems using the IR sensors to accomplish a task.
 ####Documentation
+
+C1C McPeek expalined how to use individual IR functions to return a value that denotes how close an object is.
